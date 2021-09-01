@@ -3,7 +3,7 @@
 
 # M4a_Converter v1.0
 # Made by Harish Kumar
-# https://www.github.com/randomguy-8
+# https://www.github.com/Randomguy-8/m4a-converter
 
 
 # checks if ffmpeg installed or not
@@ -25,7 +25,7 @@ then
 ffmpeg -i $1.m4a $2.mp3
 echo
 echo
-echo "done. If you need any help, then more info here: https://www.github.com/randomguy-8/m4a-converter"
+echo "done. If you need any help, then more info here: https://www.github.com/Randomguy-8/m4a-converter"
 # error if file not exist
 else
 echo "check your spellings again! Because file not exist. remember \"a\" and\"A\" Has difference."
