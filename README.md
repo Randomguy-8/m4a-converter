@@ -6,7 +6,7 @@ It uses ffmpeg to convert files<br><br>
 
 ### Installation:
 
-To execute this bash script so follow this introduction:
+To Run this tool, follow the introduction:
 
 Go to m4a_converter's file-properties and give it all executeable
 permisions or just open terminal in the directory where m4a_converter
