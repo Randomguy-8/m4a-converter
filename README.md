@@ -21,3 +21,6 @@ then open terminal in same directory in which your m4a_converter present
 and type the following command "./m4a_converter <input_file> <output_file>"
 
 Remember here "input_file" name is just files name not its extension!
+
+
+### Thx for downloading!
