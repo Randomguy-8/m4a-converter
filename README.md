@@ -9,7 +9,7 @@
 <br>
 
 Thats a bash tool That helps to convert `.m4a` media files to `.mp4`<br>
-It uses ffmpeg to convert files<br><br>
+It uses `ffmpeg` to convert files<br><br>
 
 ### Installation:
 
