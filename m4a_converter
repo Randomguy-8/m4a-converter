@@ -1,0 +1,64 @@
+#! /bin/bash
+
+
+# M4a_Converter v1.0
+# Made by Harish Kumar
+# https://www.github.com/randomguy-8
+
+
+# checks if ffmpeg installed or not
+if [ -e /bin/ffmpeg ]
+then
+# if installed:
+# cheks if your input is ok
+if [ -z $1  ] || [ -z $2 ]
+then
+# error for bad input
+echo
+echo "                         <error>"
+echo
+echo "Usage: ./bash.sh <name1> <name2>   || here name1 refer to input .m4a file_name and name2 refer to output mp4 file_name"
+echo
+# checks if file exist or not
+elif [  -e $1.m4a ]
+then
+ffmpeg -i $1.m4a $2.mp3
+echo
+echo
+echo "done. If you need any help, then more info here: https://www.github.com/randomguy-8/m4a-converter"
+# error if file not exist
+else
+echo "check your spellings again! Because file not exist. remember \"a\" and\"A\" Has difference."
+# a timer punishment! my ass... just make it for experiment purpose A.K.A fun!!!!
+x=1
+while [ $x -le 5 ]
+do 
+echo -e $x "\c"
+(( x++ ))
+sleep 0.5
+done
+echo
+fi
+# end of sucessfull tasks!
+
+# error if ffmpeg is not installed
+else
+echo "      you need to install ffmpeg to run m4a-converter!"
+echo
+echo "you can install it by following commands <sudo apt install ffmpeg>"
+echo
+echo "we can even install it write now! did you want to install?"
+echo "press \"y\" to continue and \"n\" to exit. this will use root if you continue."
+# taking permission to install ffmpeg, if granted then install
+read yn
+if [ $yn = "y" ] || [ $yn = "Y" ]
+then
+sudo apt install ffmpeg
+# runs your command again after installation completes
+mcn=$0
+./$mcn $1 $2
+# exit after you decline permission
+else
+echo "ok! as you wish...!"
+fi
+fi
