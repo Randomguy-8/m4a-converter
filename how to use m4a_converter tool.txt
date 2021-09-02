@@ -8,7 +8,7 @@ This is a simple bash script that i use to convert .m4a file to .mp4
 it uses ffmpeg to complete its process.
 
 ###HOW TO uses___________________________________________________________
-To execute this bash script so follow this introduction:
+To execute this bash script U need to follow these introductions:
 
 Go to m4a_converter's file-properties and give it all executeable
 permisions or just open terminal in the directory where m4a_converter
