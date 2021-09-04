@@ -1,7 +1,7 @@
 #! /bin/bash
 
 
-# M4a_Converter v1.0
+# Verson 2.0
 # Made by Harish Kumar
 # https://www.github.com/Randomguy-8/m4a-converter
 
@@ -15,9 +15,9 @@ if [ -z $1  ] || [ -z $2 ]
 then
 # error for bad input
 echo
-echo "                         <error>"
+echo "<error>"
 echo
-echo "Usage: ./bash.sh <name1> <name2>   || here name1 refer to input .m4a file_name and name2 refer to output mp4 file_name"
+echo "Usage: ./bash.sh <input_file> <output_file>   | Here input_file is files name not its extension."
 echo
 # checks if file exist or not
 elif [  -e $1.m4a ]
@@ -28,15 +28,9 @@ echo
 echo "done. If you need any help, then more info here: https://www.github.com/Randomguy-8/m4a-converter"
 # error if file not exist
 else
+echo
+echo "<error>"
 echo "file not exist!"
-# a timer punishment! my ass... just make it for experiment purpose A.K.A fun!!!!
-x=1
-while [ $x -le 5 ]
-do 
-echo -e $x "\c"
-(( x++ ))
-sleep 0.5
-done
 echo
 fi
 # end of sucessfull tasks!
@@ -55,8 +49,13 @@ if [ $yn = "y" ] || [ $yn = "Y" ]
 then
 sudo apt install ffmpeg
 # runs your command again after installation completes
+if [ -z $1 ] || [ -z $2 ]
+then
+exit 0
+else 
 mcn=$0
 ./$mcn $1 $2
+fi
 # exit after you decline permission
 else
 echo "ok! as you wish...!"
