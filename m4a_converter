@@ -28,7 +28,7 @@ echo
 echo "done. If you need any help, then more info here: https://www.github.com/Randomguy-8/m4a-converter"
 # error if file not exist
 else
-echo "check your spellings again! Because file not exist. remember \"a\" and\"A\" Has difference."
+echo "file not exist!"
 # a timer punishment! my ass... just make it for experiment purpose A.K.A fun!!!!
 x=1
 while [ $x -le 5 ]
@@ -47,7 +47,7 @@ echo "      you need to install ffmpeg to run m4a-converter!"
 echo
 echo "you can install it by following commands <sudo apt install ffmpeg>"
 echo
-echo "we can even install it write now! did you want to install?"
+echo "we can even install it right now! did you want to install?"
 echo "press \"y\" to continue and \"n\" to exit. this will use root if you continue."
 # taking permission to install ffmpeg, if granted then install
 read yn
