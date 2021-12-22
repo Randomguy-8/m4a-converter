@@ -29,10 +29,6 @@ and type the following command `./m4a_converter <input_file> <output_file>`
 
 Remember here "input_file" name is just files name not its extension!
 
-### Tags
 
-m4a_converter <br>
-m4a to mp3 converter <br>
-m4a-to-mp3 <br>
 
 ### Thx for downloading!
