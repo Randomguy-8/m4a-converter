@@ -1,22 +1,17 @@
 # M4A to MP3 converter
 
 
-M4A - MP3 converter is a bash tool that helps to convert `.m4a` media files to `.mp4`<br>
+M4a-Converter: Convert `.m4a` media files to `.mp4`<br>
 
 ## Dependency
 1) ffmpeg
 
-## Installation:
+## Usage:
 
-<b>To Run this tool, follow the introduction:</b>
-
-> cd to tool, and give it all executable permissions (`chmod +x m4a_converter`).
-
-
-<b>now you need to execute m4a_converter file. You can do it by following
-ways:</b>
-
->  Type (`./m4a_converter <input_file> <output_file>`). Here `<input_file>` is source file and `<output_file>` is file you want as output.
+```
+Chmod 777 m4a-converter
+./m4a-converter <File_Name> <Output_File_Name>
+```
 
 
 ## License
@@ -42,7 +37,3 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
-
-
-
-### Thx for downloading!
