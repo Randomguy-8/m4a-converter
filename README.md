@@ -10,7 +10,7 @@ M4a-Converter: Convert `.m4a` media files to `.mp4`<br>
 
 ```
 Chmod 777 m4a-converter
-./m4a-converter <File> <Output_File>
+./m4a2mp3 <File> <Output_File>
 ```
 
 
