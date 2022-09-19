@@ -1,0 +1,11 @@
+#! /bin/bash
+
+# Verson 2.0
+# Made by Randomguy
+# https://www.github.com/Randomguy-8/m4a-converter
+
+[[ -z "$1" || -z "$2" || "$1" == "-h"* ]] && echo -e "usage: m4a2mp3 [input] [output]" >&2 && exit 0	# Check if user need help
+
+[[ "${2#*.}" != "mp3" ]] && Output="${2}.mp3" || Output="$2"	# ".mp3" suffix is necessary
+echo -e "\e[5mConverting...\e[0m"
+[[ -f "$1" && -n "$2" ]] && ffmpeg -i "$1" "$Output" 2>/dev/null	# Convert
