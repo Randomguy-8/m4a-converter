@@ -1,15 +1,17 @@
 # M4A to MP3 converter
 
 
-M4a-Converter: Convert `.m4a` media files to `.mp4`<br>
+m4a2mp3: Convert `.m4a` media files to `.mp4`<br>
 
 ## Dependency
 1) ffmpeg
 
-## Usage:
+## Installation & Usage
 
 ```
-Chmod 777 m4a-converter
+git clone https://github.com/Randomguy-8/m4a-converter
+cd m4a-converter
+Chmod 777 m4a2mp3
 ./m4a2mp3 <File> <Output_File>
 ```
 
