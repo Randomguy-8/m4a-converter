@@ -1,11 +1,13 @@
-#! /bin/bash
-
+#!/bin/bash
+#
 # Verson 2.0
 # Made by Randomguy
 # https://www.github.com/Randomguy-8/m4a-converter
 
-[[ -z "$1" || -z "$2" || "$1" == "-h"* ]] && echo -e "usage: m4a2mp3 [input] [output]" >&2 && exit 0	# Check if user need help
+[[ -z "$1" || -z "$2" || "$1" == "-h"* ]] && echo -e "usage: m4a2mp3 [input] [output]" >&2 && exit 0	# User needs help?
+[[ "${2#*.}" != "mp3" ]] && Output="${2}.mp3" || Output="$2"						# ".mp3" suffix is necessary
+while [[ -e "$Output" ]]; do Output="${Output%.*}${i}.mp3"; ((i++)); done				# Rename if "Output" already exist
 
-[[ "${2#*.}" != "mp3" ]] && Output="${2}.mp3" || Output="$2"	# ".mp3" suffix is necessary
-echo -e "\e[5mConverting...\e[0m"
-[[ -f "$1" && -n "$2" ]] && ffmpeg -i "$1" "$Output" 2>/dev/null	# Convert
+echo -en "\e[5m Converting...\e[0m\r"
+[[ -f "$1" ]] && ffmpeg -i "$1" "$Output" 2>/dev/null || echo -e "File $1 not Exist!" >&2		# Convert
+echo -e "Converted     "
